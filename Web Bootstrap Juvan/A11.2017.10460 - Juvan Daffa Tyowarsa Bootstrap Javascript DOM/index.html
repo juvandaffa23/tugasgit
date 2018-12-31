@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function validasi(){
+        var namaValid    = /^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/;
+        var nama         = data.nama.value;
+        var password     = data.password.value;
+        var messagee     = '';
+
+        if (nama == '') {
+            messagee = '-Nama tidak boleh kosong\n';
+            }
+           
+        if (nama != '' && !nama.match(namaValid)) {
+            messagee += '-nama tidak valid\n';
+            }
+             
+        if (password == '') {
+            messagee += '-Password tidak boleh kosong\n';
+            }     
+        if (messagee != '') {
+            alert('Kesalahan teknis : \n'+messagee);
+            return false;
+            }
+        return true
+        }
+</script>
+    <script type="text/javascript">
+            alert("Selamat datang di Juvan Personality");
+    </script>
+    <script type="text/javascript">
+        alert("Penambahan Javascript Pada Tampilan Awal, Formulir, dan Contact Center beserta penambahan DOM sesuai dengan PPT");
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title>Personality</title>
+
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+
+    <!-- ====== ALL CSS ====== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-nav">
+    
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <!-- // Preloader -->
+    
+
+    <!-- ====== Header ====== -->
+    <header id="header" class="header">
+        <!-- ====== Navbar ====== -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <!-- // Logo -->
+
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span><i class="fa fa-bars"></i></span></button>
+                <!-- Mobile Menu -->
+
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">HOBI</a></li>
+                        <li class="nav-item"><a class="nav-link pr0" href="#krs">KRS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">GALERI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mulmed">MULMED</a></li>
+                        <li class="nav-item"><a class="nav-link pr0" href="#form">FORM ADMIN</a></li>
+                        <li class="nav-item"><a class="nav-link pr0" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ====== // Navbar ====== -->
+    </header>
+    <!-- ====== // Header ====== -->
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home">
+        <!-- Hero Area Content -->
+        <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h2 class="text-uppercase">Ayo Kenali</h2>
+                        <h3 class="text-uppercase"><span class="typed"></span></h3>
+                        <p>Pasti Seru Jika Kalian Mengikutinya.</p>
+                        <a href="#about" class="button smooth-scroll">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/img-1.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/img-2.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
+    </div>
+    <!-- ====== //Hero Area ====== -->
+
+    <!-- ====== Featured Area ====== -->
+    <section id="featured" class="section-padding pb-70">
+        <div class="container">
+            <div class="row">
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">My Personality</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <p>menurut wikipedia biodata adalah sebuah data biografis, jika dalam arti luasnya biodata adalah jenis pertanyaan nyata tentang kehidupan dan pengalaman kerja, sseta item yang melibatkan pendapat,nilai,keyakinan, dan sikap yang mencerminkan persoektif sejarah. Karena responden menjaab pertanyaan tentang diri mereka sendiri, ada unsur-unsur baik biografi dan otobiografi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Web Design</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>
+
+                                Desain web merupakan salah satu bidang IT yang paling cepat berubah. Karena itu keuntungan belajar web desain bisa membuat Anda tahu semua perubahan dengan cepat. Hal yang paling dikeluhkan oleh pasar web desain saat ini adalah bahwa semakin banyak orang menguasai berbagai ilmu dalam desain web. Jadi sekarang jika Anda tidak berbagi maka ilmu Anda justru tidak akan berkembang.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">All About Me</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <p>untuk mengenai Biodata saya, simak baik" dibawah ini ya.. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Featured Area ====== -->
+
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>About Me</h2>
+                        <p>Adanya contoh biodata diri ini sangat penting sekali. Apalagi dalam berkas-berkas lamaran, tentunya kalian akan sering mendapati yang namanya biodata ataupun membuat biodata yang mana biodata itu nantinya akan dilampirkan kedalam berkas tersebut. Ya tentu saja, karena dapat dikatakan bahwa biodata diri ini ialah salah satu berkas-berkas yang wajib ada ketika sedang proses lamaran kerja.
+                            Diantara kalian tentunya tau dong cara membuat biodata diri yang baik dan benar sesuai dengan UUD 1945. Namun pada kesempatan kali ini saya akan sedikit membahas seputar cara membuat biodata diri yang baik dan benar dan juga akan sedikit memberikan contoh biodata diri untuk teman-teman yang memang belum mengetahuinya.
+                            Yuk, langsung saja kita simak bareng-bareng ulasan yang ada dibawah ini.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/about-bg.jpg)">
+                        <!-- Social Link -->
+                        <div class="social-aria">
+                            <a target="_blank" href="https://www.facebook.com/juvan.fourhours"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://twitter.com/JuvanDaffa"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/juvandaffa/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <!-- // Social Link -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Hello, I am <span>Juvan Daffa Tyowarsa</span></h2>
+                        <h4>Mahasiswa Semester 3 Pemrograman Berbasis Web</h4>
+                        Nomor Induk Mahasiswa ( NIM )&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: A11.2017.10460
+	<br>Nama Mahasiswa&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: JUVAN DAFFA TYOWARSA
+	<br>Fakultas&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Fakultas Ilmu Komputer
+	<br>Program Studi&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Teknik Informatika
+	<br>Jalur Pendaftaran&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Reguler
+	<br>Tempat,Tanggal Lahir&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Semarang, 23 Juni 1999
+	<br>Provinsi & Kota&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: JAWA TENGAH
+	<br>Telepon Asal&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 082115502188
+	<br>Alamat Semarang&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Jl. Bukit Seroja 1, Perum Perumnas &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSendangmulyo, Kec. Tembalang, 
+	<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKota Semarang
+	<br>Kode Pos Semarang&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : 50272
+	<br>Telpon Semarang&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : -
+	<br>No HP Mahasiswa&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 082115502188
+	<br>Email Mahasiswa &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 111201710460@mhs.dinus.ac.id
+	<br>Email Lain&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: juvanfourhours@yahoo.com
+	<br>Warga Negara&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: WNI
+	<br>Agama&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Islam
+	<br>Golongan Darah&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: O
+	<br>Status Marital&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Belum Menikah
+	<br>Kelas Pagi/Malam&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Pagi
+	<br>Dosen Wali&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: NISA'UL HAFIDHOH, M.T. 
+
+                        <h5>My Skills</h5>
+
+                        <!-- Skill Area -->
+                        <div id="skills" class="skill-area">
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>HTML5</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span>CSS3</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">85%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="50%">
+                                    <div class="skillbar-title"><span>JS</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                        </div>
+                        <!-- //Skill Area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // About Area ====== -->
+
+
+    <!-- ====== Fact Counter Section ====== -->
+    <!-- ====================================================================
+            NOTE: You need to change  'data-count="10"' and 'p' Eliments 
+        ===================================================================== -->
+    <section class="section-padding pb-70 bg-img fact-counter" id="counter" style="background-image: url(assets/images/fan-fact-bg.jpg)">
+        <div class="container">
+            <div class="row">
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 co col-md-6 l-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="08">0</span>+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="600">0</span>+</h2>
+                        <p>Happy Friends</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="09">0</span>+</h2>
+                        <p>Awards Win</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="451">0</span>+</h2>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Fact Counter Section ====== -->
+
+    <!-- ====== Service Section ====== -->
+    <section id="service" class="section-padding pb-70 service-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Hobi</h2>
+                        <p>Inilah Hobi saya ga bisa disebutkan semua</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <h2>Web Design</h2>
+                        <p>Salah satu kegemaran saya.. jika dikala senggang sekaligus belajar agar bisa mahir dalam pemrograman</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-area"></i>
+                        </div>
+                        <h2>Mendaki Gunung</h2>
+                        <p>“Patriotisme tidak mungkin tumbuh dari hipokrisi dan slogan-slogan. Seseorang hanya dapat mencintai sesuatu secara sehat kalau ia mengenal obyeknya. Dan mencintai tanah air Indonesia dapat ditumbuhkan dengan mengenal Indonesia bersama rakyatnya dari dekat. Pertumbuhan jiwa yang sehat dari pemuda harus berarti pula pertumbuhan fisik yang sehat. Karena itulah kami naik gunung.”</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <h2>Travelling</h2>
+                        <p>Traveling adalah salah satu hobi yang diminati anak muda masa kini. Pergi dan menjelajah dari satu kota ke kota lainnya atau bahkan ke negara lain memang merupakan suatu petualangan tersendiri. Bahkan, nampaknya traveling sudah diadopsi menjadi life style dan mendarah daging bagi para anak muda.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+            </div>
+
+        </div>
+    </section>
+    <!-- ====== //Service Section ====== -->
+
+    <!-- ====== Why choose Me Section ====== -->
+    <section id="krs" class="section-padding why-choose-us pb-70">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>KRS Semester 3</h2>
+                        <p>Ini adalah KRS Semester 3 Saya di Universitas Dian Nuswantoro</p>
+                    </div>
+                </div>
+            </div>
+            <table border="1" align="center" width="600px">
+                <tr align="center">
+                    <th><b>Nomor</th>
+                    <th>Kelompok</th>
+                    <th>Mata Kuliah</th>
+                    <th>SKS</b></th>
+                </tr>
+                <tr align="center">
+                    <td>1</td>
+                    <td>A11.4304</td>
+                    <td>Probabilitas & Statistik</td>
+                    <td>3</td>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td>A11.4306</td>
+                    <td>Matematika Diskrit</td>
+                    <td>3</td>
+                </tr>
+                <tr align="center">
+                    <td>3</td>
+                    <td>A11.4302</td>
+                    <td>Matriks dan Ruang Vektor</td>
+                    <td>3</td>
+                </tr>
+                <tr align="center">
+                    <td>4</td>
+                    <td>A11.4305</td>
+                    <td>Struktur Data</td>
+                    <td>4</td>
+                </tr>
+                <tr align="center">
+                    <td>5</td>
+                    <td>A11.4309</td>
+                    <td>Pemrograman Berbasis Web</td>
+                    <td>3</td>
+                </tr>
+                <tr align="center">
+                    <td>6</td>
+                    <td>A11.4313</td>
+                    <td>Organisasi dan Arsitektur Komputer</td>
+                    <td>3</td>
+                </tr>
+                <tr align="center">
+                    <td>7</td>
+                    <td>A11.4507</td>
+                    <td>Jaringan Komputer</td>
+                    <td>3</td>
+                </tr>
+                <tr align="center">
+                    <td>8</td>
+                    <td>N6005</td>
+                    <td>Pendidikan Kewarganegaraan</td>
+                    <td>2</td>
+                </tr>
+            </table>
+                <!-- // Single Why choose me -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Why choose Me Section ====== -->
+
+    <!-- ====== Portfolio Section ====== -->
+    <section id="portfolio" class="section-padding pb-85 portfolio-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>GALERIKU</h2>
+                        <p>Inilah Sedikit Galeri yang aku punya</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row justify-content-center">
+                <!-- Work List Menu-->
+                <div class="col-lg-8">
+
+                </div>
+                <!-- // Work List Menu -->
+            </div>
+            <div class="row portfolio">
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp graphic">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-1.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-1.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Perjalanan <span>Menggunakan taksaka Pagi</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo web graphic other wp">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-2.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-2.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Pantulan<span>Kaki</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp other">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-3.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-3.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Foto <span>Selfie Kamar</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo other graphic wp web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-4.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-4.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Perjalanan <span>ke Banyuwangi lhohhhh</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo other wp graphic web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-5.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-5.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Selfie di <span>Rumah</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp logo graphic web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-6.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-6.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover other">
+                            <h4>Foto <span>Selfie Kamar</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix web wp">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-7.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-7.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Perjalanan ke <span>Bandung</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo graphic wp web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-8.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-8.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Foto di <span>Hotel</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix other logo web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-9.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-9.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Pensil <span>Warna</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Portfolio Section ====== -->
+
+    <!-- ====== Frequently asked questions ====== -->
+    <section id="mulmed" class="section-padding faq-area bg-secondary">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center faq-title">
+                        <h2>Multimedia</h2>
+                        <p>Ini adalah contoh Multimedia yang saya sertakan</p>
+                    </div>
+                </div>
+            </div>
+                <tr>
+                    <td><h2><br>Video PRODUCE48 - NEKKOYA </h2></td>
+                </tr>
+                <tr>
+                    <td>
+                        <video width="640" height="360" controls>
+                            <source src="assets/images/PRODUCE48 - NEKKOYA.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+               
+                       
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                    </div>
+                    <!-- FAQ Content -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Frequently asked questions ====== -->
+
+    <section id="form" class="section-padding why-choose-us pb-70">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Form Admin</h2>
+                        <table align="center" cellspacing="20">
+                            <tr>
+                                <td colspan="2"><div align="center" class="white"><font face="sans-serif" size="20">
+                                        Pendaftaran Admin </font></div></td>
+                            </tr>
+                            <form name="data" action="form2.php" method="GET" align="center" onSubmit="return validasi()">
+                            <tr>
+                                    <td>Nama</td>
+                                    <td><input type="text" name="nama" placeholder="Nama" size=20></td>
+                            </tr>
+                            <tr>
+                                    <td>Password</td>
+                                    <td><input type="password" name="password" placeholder="Kata Sandi" size=20></td>
+                            </tr>
+                            <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td><input type="radio" name="jenis_kelamin" value="Laki-laki" checked/> Laki-laki
+                                        <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan</td>
+                            </tr>
+                            <tr>
+                                    <td>Keahlian</td>
+                                    <td><input type="checkbox" name="keahlian" value="Bela Diri"/> Bela Diri
+                                        <input type="checkbox" name="keahlian1" value="Memanah" checked/> Memanah
+                                        <input type="checkbox" name="keahlian2" value="Karate"/> Karate</td>
+                            </tr>
+                            <tr>
+                                    <td>Tempat Lahir</td>
+                                    <td><select name="tempat_lahir">
+                                            <option>Tmpt Lahir</option>
+                                            <option value="Jakarta">Jakarta</option>
+                                            <option value="Bandung">Bandung</option>
+                                            <option value="Semarang">Semarang</option>
+                                            <option value="Yogyakarta">Yogyakarta</option>
+                                            <option value="Magelang">Magelang</option>
+                                            <option value="Purworejo">Purworejo</option>
+                                        </select></td>
+                            </tr>
+                            <tr>
+                                    <td>Deskripsi </td>
+                                    <td><textarea name="deskripsi" rows="5" cols="20"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Daftar">
+                                    <input type="reset" value="Reset"></td>
+                            </tr>
+                        </form>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ====== Frequently asked questions ====== -->
+    <section id="mulmed" class="section-padding faq-area bg-secondary">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center faq-title">
+                        <h2>Apakah Kamu sudah mengenal Juvan lebih dalam?</h2>
+                        <p>jika sudah, tolong pilih apa saja bagian-bagian yang sudah anda ketahui</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                
+                <p>PILIH</p>
+                <p>
+                <select id="bio" size="7" onchange="pilih()">
+                    <option value="P">Profil</option>
+                    <option value="Pe">Pendidikan</option>
+                    <option value="C">Contact</option>
+                    <option value="S">Sosial Media</option>
+                
+                </select>
+            </div>
+    
+            <div class="row justify-content-center">
+                <p>Pilihan</p>
+                <select id="pilihan" size="7"></select>
+            </div>            
+        </div>
+    </section>
+  
+
+    <!-- ====== Contact Area ====== -->
+    <section id="contact" class="section-padding contact-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Contact Me</h2>
+                        <p>Ini Kontak-kontak yang dapat di hubungi </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Form -->
+                    
+	<b>Klik dibawah ini untuk melihat profil saya lebih dalam :</b></p>
+   
+
+    <br><b>Biodata Lengkap : <a href="javascript:alert('Apakah Anda yakin akan meninggalkan Halaman Ini?'); window.location.href='https://dinus.ac.id/mahasiswa/A11.2017.10460'; ">Link Biodata Lengkap Saya</a>
+	<br>Nomor HP&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 082115502188
+    <br>Instagram&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <a href="javascript:alert('Apakah Anda yakin akan meninggalkan Halaman Ini?'); window.location.href='https://www.instagram.com/juvandaffa/'; ">@juvandaffa</a>
+    <br>Facebook&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <a href="javascript:alert('Apakah Anda yakin akan meninggalkan Halaman Ini?'); window.location.href='https://www.facebook.com/juvan.fourhours'; ">Juvan Daffa T</a>
+    <br>Twitter&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <a href="javascript:alert('Apakah Anda yakin akan meninggalkan Halaman Ini?'); window.location.href='https://twitter.com/JuvanDaffa'; ">@JuvanDaffa</a>
+
+            <!-- // Contact Form -->
+        </div>
+    </section>
+    <!-- ====== // Contact Area ====== -->
+
+
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p class="text-white">&copy; 2018 Designed By Juvan Daffa T A11.2017.10460</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== // Footer Area ====== -->
+
+
+
+
+
+
+     <!-- ====== ALL JS ====== -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
